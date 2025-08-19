@@ -186,6 +186,18 @@
                 }, 
                 {
                  "height":0,
+                 "id":290,
+                 "name":"David",
+                 "point":true,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":100.376202129568,
+                 "y":945.376202129568
+                }, 
+                {
+                 "height":0,
                  "id":278,
                  "name":"Plato",
                  "point":true,

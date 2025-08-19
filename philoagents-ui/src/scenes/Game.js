@@ -69,6 +69,7 @@ export class Game extends Scene
             { id: "searle", name: "Searle", defaultDirection: "front", roamRadius: 730 },
             { id: "chomsky", name: "Chomsky", defaultDirection: "front", roamRadius: 690 },
             { id: "dennett", name: "Dennett", defaultDirection: "front", roamRadius: 710 },
+            { id: "david", name: "David", defaultDirection: "front", roamRadius: 900 },
             { 
                 id: "miguel", 
                 name: "Miguel", 

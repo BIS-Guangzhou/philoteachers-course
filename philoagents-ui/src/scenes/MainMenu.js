@@ -6,8 +6,10 @@ export class MainMenu extends Scene {
     }
 
     create() {
-        this.add.image(0, 0, 'background').setOrigin(0, 0);
-        this.add.image(510, 260, 'logo').setScale(0.55);
+        this.backgroundImage = this.add.image(0, 0, 'background').setOrigin(0.5, 0.5);
+        this.logoImage = this.add.image(0, 0, 'logo');
+        this.updateLayout();
+        this.scale.on('resize', this.updateLayout, this);
 
         const centerX = this.cameras.main.width / 2;
         const startY = 524;
@@ -24,6 +26,32 @@ export class MainMenu extends Scene {
         this.createButton(centerX, startY + buttonSpacing * 2, 'Support Philoagents', () => {
             window.open('https://github.com/neural-maze/philoagents-course', '_blank');
         });
+    }
+
+    updateLayout() {
+        const width = this.scale.width;
+        const height = this.scale.height;
+
+        if (this.backgroundImage) {
+            // Scale background to cover the screen while preserving aspect ratio
+            const scaleX = width / this.backgroundImage.width;
+            const scaleY = height / this.backgroundImage.height;
+            const scale = Math.max(scaleX, scaleY);
+            this.backgroundImage.setScale(scale);
+            this.backgroundImage.setPosition(width / 2, height / 2);
+        }
+
+        if (this.logoImage) {
+            // Position logo near the top-center and scale within safe bounds
+            this.logoImage.setPosition(width / 2, height * 0.34);
+
+            const maxLogoWidth = width * 0.5;
+            const maxLogoHeight = height * 0.2;
+            const scaleW = maxLogoWidth / this.logoImage.width;
+            const scaleH = maxLogoHeight / this.logoImage.height;
+            const logoScale = Math.min(scaleW, scaleH, 1);
+            this.logoImage.setScale(logoScale);
+        }
     }
 
     createButton(x, y, text, callback) {

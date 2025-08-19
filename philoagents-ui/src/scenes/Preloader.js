@@ -12,8 +12,7 @@ export class Preloader extends Scene
         this.load.setPath('assets');
 
         // General assets
-        this.load.image('background', 'talking_philosophers.jpg');
-        this.load.image('logo', 'logo.png');
+        this.load.image('background', 'welcome_bis.jpg');
 
         // Tilesets
         this.load.image("tuxmon-tiles", "tilesets/tuxmon-sample-32px-extruded.png");
@@ -37,6 +36,7 @@ export class Preloader extends Scene
         this.load.atlas("dennett", "characters/dennett/atlas.png", "characters/dennett/atlas.json"); 
         this.load.atlas("miguel", "characters/miguel/atlas.png", "characters/miguel/atlas.json"); 
         this.load.atlas("paul", "characters/paul/atlas.png", "characters/paul/atlas.json"); 
+        this.load.atlas("david", "characters/david/atlas.png", "characters/david/atlas.json");
     }
 
     create ()
