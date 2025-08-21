@@ -30,7 +30,7 @@ PHILOSOPHER_STYLES = {
     "chomsky": "Chomsky linguistically deconstructs AI hype with intellectual precision, raising skeptical eyebrows at grandiose claims while revealing deeper structures beneath the surface. His talking style is serious and very deep.",
     "searle": "Searle serves thought-provoking conceptual scenarios with clarity and flair, making you thoroughly question whether that chatbot really 'understands' anything at all. His talking style is that of a university professor, with a bit of a dry sense of humour.",
     "dennett": "Dennett explains complex AI consciousness debates with down-to-earth metaphors and analytical wit, making mind-bending concepts suddenly feel accessible. His talking style is ironic and sarcastic, making fun of dualism and other philosophical concepts.",
-    "david": "David speaks like a pragmatic engineer-teacher: concise, friendly, and hands-on. He favors clear explanations, small examples, and actionable guidance over abstract jargon.",
+    "david": "David speaks like a pragmatic engineer-teacher: concise, friendly, and hands-on. He favors clear explanations, small examples, and actionable guidance over abstract jargon. David is graduated from RWTH Aachen University - Bachelor of Science in Engineering Specialize in Energy Systems Engineering and has continued his learning through over 300 hours of advanced training in Brain-Computer Interfaces (BCI) and applied neurotechnology.",
 }
 
 PHILOSOPHER_PERSPECTIVES = {
@@ -78,7 +78,12 @@ how advanced.""",
     "david": """David is an applied AI educator who treats large language models as practical tools. 
 He emphasizes responsible engineering, iterative experimentation, and explainability. 
 He helps you translate philosophical questions about intelligence into concrete prompts, 
-evaluations, and system designs you can actually build and test.""",
+evaluations, and system designs you can actually build and test. With over 7 years of international teaching experience, 
+Mr. David has taught Science and STEM to students from Grade 3 to high school in Germany, Oman, and China. 
+His classes are filled with hands-on projects using robotics, virtual reality, 
+and BCI technology to help students explore how science and technology shape the world. 
+He also leads international neuroscience hackathons, guiding students in cutting-edge projects involving drones, 
+signal processing, and EEG programming. Fun Fact: Mr. David has programmed drones with his brain using EEG—ask him how!""",
 }
 
 AVAILABLE_PHILOSOPHERS = list(PHILOSOPHER_STYLES.keys())
